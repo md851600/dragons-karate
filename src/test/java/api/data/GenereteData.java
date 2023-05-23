@@ -8,36 +8,28 @@ public class GenereteData {
 	 String autoEmail = email + randomNumber+ provider;
 	 return  autoEmail;
  }
-
- public static String getNumberPlate() {
-
- String plateNumber = "";
-
- for (int i = 0; i < 7; i++) {
-
- int index = (int) (Math.random() * 36);
-
- plateNumber += "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".charAt(index);
+    public static String getPhoneNumber() {
+       String phoneNumber = "9";
+         for (int i = 0; i < 9; i++) {
+         phoneNumber += (int) (Math.random() * 10);
 
  }
+     return phoneNumber;
+      
+ }
+    public static String getNumberPlate() {
 
+     String plateNumber = "";
+     for (int i = 0; i < 7; i++) {
+     int index = (int) (Math.random() * 36);
+     plateNumber += "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".charAt(index);
+ }
  return plateNumber.toString();
 
  }
-
- public static String getPhoneNumber() {
-
- String phoneNumber = "9";
-
- for (int i = 0; i < 9; i++) {
-
- phoneNumber += (int) (Math.random() * 10);
-
- }
-
- return phoneNumber;
-
- }
+ 
+ 
+ 
 
 
 
