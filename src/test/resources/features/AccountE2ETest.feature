@@ -1,3 +1,4 @@
+@Regression
 Feature: EnD 2 End Account Testing
 
   Background: API Test
